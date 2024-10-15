@@ -12,9 +12,24 @@ int main(){
     str2[5] = 's';
 
     // TODO: (1) Recorre arr mediante un índice usando un ciclo
-
+printf("[ ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d, ", arr[i]);
+    }
+    printf(" ]\n");
     // TODO: (2) Recorre str mediante un índice usando un ciclo
-    
+  printf("[ ");
+    for (int i = 0; i < strlen(str); i++) {
+        printf("%c ", str[i]);
+    }
+    printf("]\n");  
 
     // TODO:(3) Recorre str2 mediante un índice usando un ciclo
+     printf("[ ");
+    for (int i = 0; i < strlen(str2); i++) {
+        printf("%c ", str[i]);
+    }
+    printf("]\n");
+
+    return 0;
 }
