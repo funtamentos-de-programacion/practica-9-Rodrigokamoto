@@ -10,7 +10,11 @@ int main() {
     b[1] = 20;
     c[2] = 30;
     //TODO: (16) Mostrar los valores usando los punteros
-    
+    printf("[ ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d, ", arr[i]);
+    }
+    printf(" ]\n");
     
     return 0;
 }
