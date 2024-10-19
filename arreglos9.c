@@ -16,19 +16,22 @@ ptrC = &C[0][0];
             for (int k = 0; k < 2; k++) {
                 // C[i][j] += A[i][k]*B[k][j]
                 //representar a j tarea y linea 27
-                *(ptrC+i*2+j) *= * (ptrA+i*2+k) * *(ptrB+k);
+                *(ptrC+i*2 +j) += * (ptrA+i*2+k) * *(ptrB+k*2+j);
                 // TODO: Realiza las operaciones solo usando apuntadores
             }
         }
     }
     
     // Mostrar matriz resultante
-    for (int i = 0; i < 9; i++) {
-        //poner un for 
-            // TODO: Imprime los elementos de la matriz resultante, usando apuantadores
+    printf("Matriz resultante:\n");
+    for (int i = 0; i < 2; i++){
+        for (int j = 0; j<2; j++){
+            printf("%d\t", *(ptrC +i *2 +j));
+            
         }
-        
     }
+        
+        
     
     return 0;
 }
